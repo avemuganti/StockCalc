@@ -13,39 +13,20 @@ int findMinCoefIdx(stock *s, int length); // -1 does not count.
 int main() {
     
     // Data for all owned stock.
+    // TODO: For every stock you own, add 1 to this value.
     
-    const int STOCK_COUNT = 24;
+    const int STOCK_COUNT = 1;
     
-    enum ticker {MRO, GD, ABEV, BA, AXP, PFE, MCD, BRKB, BAC, BUD, EADSY, IMBBY, WFC, CLB, EPD, BTI, ENB, VTRS, RHHBY, SLB, XOM, HBI, INGR, RDSB};
+    // TODO: Add all ticker symbols here. The number of elements here should equal STOCK_COUNT.
+    enum ticker {EXAMPLE};
     
     stock portfolio[STOCK_COUNT];
     
     // Initialize all stocks
+    // TODO: Add all stocks in your portfolio.
+    // EXAMPLE & USAGE: portfolio[TICKER] = stock("CompanyName", "TICKER", sharesOwned, totalPricePaid);. Example below.
     
-    portfolio[MRO] = stock("Marathon Oil", "MRO", 1, 0);
-    portfolio[GD] = stock("General Dynamics", "GD", 3, 399.84);
-    portfolio[ABEV] = stock("AmBev", "ABEV", 67, 140.55);
-    portfolio[BA] = stock("Boeing", "BA", 4, 526.16);
-    portfolio[AXP] = stock("American Express", "AXP", 6, 523.24);
-    portfolio[PFE] = stock("Pfizer", "PFE", 198, 6'938.45);
-    portfolio[MCD] = stock("McDonalds", "MCD", 4, 741.08);
-    portfolio[BRKB] = stock("Berkshire Hathaway", "BRK.B", 7, 1'252.53);
-    portfolio[BAC] = stock("Bank of America", "BAC", 15, 345.62);
-    portfolio[BUD] = stock("Anheuser Busch InBev", "BUD", 9, 480.77);
-    portfolio[EADSY] = stock("Airbus", "EADSY", 39, 743.73);
-    portfolio[IMBBY] = stock("Imperial Brands", "IMBBY", 139, 2'340.40);
-    portfolio[WFC] = stock("Wells Fargo", "WFC", 154, 3'673.35);
-    portfolio[CLB] = stock("Core Laboratories", "CLB", 201, 3'495.17);
-    portfolio[EPD] = stock("Enterprise Products", "EPD", 22, 363.79);
-    portfolio[BTI] = stock("British American Tobacco", "BTI", 34, 1'156.81);
-    portfolio[ENB] = stock("Enbridge", "ENB", 35, 1'033.90);
-    portfolio[VTRS] = stock("Viatris", "VTRS", 24, 0);
-    portfolio[RHHBY] = stock("Roche", "RHHBY", 2, 84.52);
-    portfolio[SLB] = stock("Schlumberger", "SLB", 31, 678.59);
-    portfolio[XOM] = stock("Exxon Mobil", "XOM", 6, 276.93);
-    portfolio[HBI] = stock("Hanesbrands", "HBI", 11, 170.00);
-    portfolio[INGR] = stock("Ingredion", "INGR", 30, 2'347.65);
-    portfolio[RDSB] = stock("Shell", "RDS.B", 43, 1'574.53);
+    portfolio[EXAMPLE] = stock("Example Company", "EXAMPLE", 1, 100);
     
     double mon;
     
